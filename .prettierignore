@@ -1,0 +1,9 @@
+node_modules/
+.next/
+/build/**
+/dist/**
+coverage/
+build/
+lib/
+next.config.js
+tsconfig.json

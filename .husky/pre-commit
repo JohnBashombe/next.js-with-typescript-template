@@ -1,0 +1,31 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo 'styling, testing and building your project before commit'
+
+# Check typescript config standards
+npm run check-types || {
+    echo ' \nTake some 🥙🥙 and try to fix your Typescript issues. Make the required changes above after taking 🥙🥙🥙\n'
+    false;
+}
+
+#  Check prettier standards
+npm run check-format || {
+    echo '\n🦖🦖 You styling does not respect this project guide lines. Run npm run format and add the required changes. 🦖🦖\n'
+    false;
+}
+
+#  Check eslint standards
+npm run check-lint || {
+    echo '\n🦖🦖 ESlint Check failed. Add the required changes and try to commit again. 🦖🦖\n'
+    false;
+}
+
+#  Build the project
+npm run build || {
+    echo '\n🛠🛠 Could not build the project 🛠🛠. 🛠🛠 View errors above to see why. 🛠🛠\n'
+    false;
+}
+
+# If we have a successful build
+echo '\n✅✅✅ You are the guy we need... I am committing this now ✅✅✅\n'  
