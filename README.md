@@ -2,7 +2,7 @@
 
 This is a well documented template for any project with Next and TypeScript
 
-## [Add-On] - Husky - ESLint - Prettier - TailwindCSS
+## [Add-On] - Husky - ESLint - Prettier - TailwindCSS - React Icons
 
 ### Next.js
 
@@ -23,5 +23,9 @@ Prettier is an opinionated code formatter. It enforces a consistent style by par
 ### TailwindCSS
 
 Tailwind CSS is a utility-first CSS framework for rapidly building custom user interfaces.
+
+### React Icons
+
+An official react icons library
 
 #### Developed with ♥♥♥ by Ntavigwa Bashombe
