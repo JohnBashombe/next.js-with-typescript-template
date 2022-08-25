@@ -6,7 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### v0.001
 
-- Configuration [Initial Setup] - configure a boiler start-up - Ntavigwa Bashombe - Auguts 17, 2022
+- Configuration [Initial Setup] - configure a boiler start-up - Ntavigwa Bashombe - August 17, 2022
 
 #### Launch v0.001 - NEXT.JS WITH TYPESCRIPT TEMPLATE
 
