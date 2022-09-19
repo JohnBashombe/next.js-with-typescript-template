@@ -1,5 +1,8 @@
 import React from 'react';
+import { AppProps } from 'next/app';
 import '../styles/globals.css';
+import Scaffold from '../components/Scaffold';
+import PageMetaData from '../components/PageMetaData';
 
 /**
  * @author Ntavigwa Bashombe
@@ -10,19 +13,15 @@ import '../styles/globals.css';
  * @license MIT
  * @version 1.0.0
  */
-const App = () => {
+const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
-    <div className='w-screen h-screen'>
-      <div className='flex flex-col w-full h-full justify-center items-center'>
-        <p className='font-bold underline text-8xl text-gray-800 my-5 cursor-pointer selection:text-white selection:bg-green-700/70'>
-          Next JS Template
-        </p>
-        <p className='text-gray-800 font-mono text-xl my-5 selection:text-white selection:bg-green-700/70'>
-          By Ntavigwa Bashombe
-        </p>
-      </div>
-    </div>
+    <>
+      <PageMetaData />
+      <Scaffold>
+        <Component {...pageProps} />
+      </Scaffold>
+    </>
   );
 };
 
-export default App;
+export default MyApp;
