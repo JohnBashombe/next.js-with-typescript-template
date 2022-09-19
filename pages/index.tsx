@@ -1,7 +1,5 @@
-import Head from 'next/head';
 import React from 'react';
-
-import App from './_app';
+import { NextPage } from 'next';
 
 /**
  * @author Ntavigwa Bashombe
@@ -12,14 +10,11 @@ import App from './_app';
  * @license MIT
  * @version 1.0.0
  */
-const Home = () => {
+const Home: NextPage = (): JSX.Element => {
   return (
-    <div className='flex'>
-      <Head>
-        <title>Template By Ntavigwa</title>
-        <meta name='description' content='Template By Ntavigwa Bashombe' />
-      </Head>
-      <App />
+    <div className='flex flex-col space-y-10 w-full h-full justify-center items-center min-h-screen text-8xl text-gray-900 font-bold'>
+      <p>My Next.js Template</p>
+      <p className='text-base font-medium'>by Ntavigwa Bashombe</p>
     </div>
   );
 };
