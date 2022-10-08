@@ -1,8 +1,9 @@
 import React from 'react';
 import { AppProps } from 'next/app';
-import '../styles/globals.css';
 import Scaffold from '../components/Scaffold';
 import PageMetaData from '../components/PageMetaData';
+import '../styles/animation.css';
+import '../styles/globals.css';
 
 /**
  * @author Ntavigwa Bashombe
